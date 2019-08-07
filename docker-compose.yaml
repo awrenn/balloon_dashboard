@@ -1,0 +1,12 @@
+version: '3'
+services:
+  entry:
+    build: nginx/
+    ports:
+      - '0.0.0.0:80:80'
+    volumes:
+      - './static:/var/www/htdocs/static:ro'
+  dynamic:
+    build: dynamic
+    ports:
+      - '127.0.0.1:8080:8080'
