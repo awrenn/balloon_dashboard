@@ -1,0 +1,3 @@
+[submodule "static/chartist-js"]
+	path = static/chartist-js
+	url = https://github.com/gionkunz/chartist-js.git
