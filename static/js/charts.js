@@ -14,7 +14,31 @@ function update_time_graph() {
   times = chop(times, 5);
   var data = {labels : times, series : [ times ]};
   var options = {width : 300, height : 200};
-  new Chartist.Line('#time_chart', data, options);
+  var responsiveOptions = [
+    [
+      'screen and (min-width: 641px) and (max-width: 1024px)', {
+        showPoint : false,
+        axisX : {
+          labelInterpolationFnc : function(value) {
+            // Will return Mon, Tue, Wed etc. on medium screens
+            return value.slice(0, 3);
+          }
+        }
+      }
+    ],
+    [
+      'screen and (max-width: 640px)', {
+        showLine : false,
+        axisX : {
+          labelInterpolationFnc : function(value) {
+            // Will return M, T, W etc. on small screens
+            return value[0];
+          }
+        }
+      }
+    ]
+  ];
+  new Chartist.Line('#time_chart', data, options, respondsiveOptions);
 }
 
 function chop(arr, c) {

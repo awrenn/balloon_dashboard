@@ -1,15 +1,17 @@
 <html>
   <head>
-    <title>MEMS IN SPACE</title>
+    <title>MEMES IN SPACE</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1,
     shrink-to-fit=no"
     />
+    <link rel="stylesheet" href="/static/css/memes.css" />
     <link
       rel="stylesheet"
-      href="/static/css/memes.css"
+      type="text/css"
+      href="/static/chartist-js/dist/chartist.min.css"
     />
     <link
       rel="stylesheet"
@@ -17,22 +19,17 @@
       integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="/static/chartist-js/dist/chartist.min.css"
-    />
   </head>
   <body>
     <div class="space-meme-container">
       <h1 class="space-meme-text">MEMES IN SPACE</h1>
     </div>
-    <div>
-        <div id="height_chart" class="container ct-chart ct-perfect-fourth"></div>
+    <div class="container chart-box">
+      <div id="height_chart"></div>
     </div>
 
-    <div>
-        <div id="time_chart" class="container ct-chart ct-perfect-fourth"></div>
+    <div class="container chart-box">
+      <div id="time_chart"></div>
     </div>
 
     <script

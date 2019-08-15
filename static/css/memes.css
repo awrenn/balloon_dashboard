@@ -22,3 +22,10 @@
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: white;
 }
+
+.chart-box {
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: grey;
+}
