@@ -8,12 +8,13 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  min-width: 100vw;
   height: 10vw;
 }
 
 .space-meme-text {
   font-size: 9vw;
+  max-width: 80vw;
+  min-width: 80vw;
   font-family: comics;
   color: black;
   background: url(/static/images/space.jpg);
@@ -25,7 +26,22 @@
 
 .chart-box {
   display: flex;
+  margin: 10px;
   padding: 10px;
   border-radius: 5px;
   background-color: grey;
+}
+
+.fire {
+    max-height: 10vw;
+    max-width: 10vw;
+}
+
+.page {
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-image: url(/static/images/tape.jpg) 40% stretch;
+  border-width: 5vw;
+  border-style: solid;
 }

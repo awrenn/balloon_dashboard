@@ -38,7 +38,7 @@ function update_time_graph() {
       }
     ]
   ];
-  new Chartist.Line('#time_chart', data, options, respondsiveOptions);
+  new Chartist.Line('#time_chart', data, options, responsiveOptions);
 }
 
 function chop(arr, c) {
