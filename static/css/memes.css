@@ -33,6 +33,12 @@
   background-color: grey;
 }
 
+.chart {
+  background-color: white;
+  margin: 1vw;
+  font-color: black;
+}
+
 .fire {
   max-height: 10vw;
   max-width: 10vw;
@@ -42,7 +48,17 @@
   max-width: 80vw;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3vw;
   border-image: url(/static/images/tape.jpg) 40% stretch;
   border-width: 5vw;
   border-style: solid;
+}
+
+.cd-holder {
+  margin-left: 25vw;
+}
+
+.count-digit {
+  background-color: #a2a158;
+  border-radius: 3px;
 }

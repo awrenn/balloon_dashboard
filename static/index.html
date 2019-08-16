@@ -22,16 +22,37 @@
   </head>
   <body>
     <div class="space-meme-container">
-      <h1 class="space-meme-text" style: "display: inline">MEMES IN SPACE</h1>
+      <h1 class="space-meme-text" style="display: inline">MEMES IN SPACE</h1>
     </div>
     <div class="page">
-	    <div class="container chart-box">
-	      <div id="height_chart"></div>
-	    </div>
-
-	    <div class="container chart-box">
-	      <div id="time_chart"></div>
-	    </div>
+      <table class="container chart-box">
+        <tbody>
+          <tr>
+            <td>
+              <div class="chart" id="height_chart"></div>
+            </td>
+            <td>
+              <div class="chart" id="time_chart"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cd-holder">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <h4 class="count-digit">
+                Hit Counter:
+              </h4>
+            </td>
+            <td>
+              <div id="hit_counter"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <script
